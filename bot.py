@@ -252,7 +252,7 @@ async def on_message_delete(message):
                   message.channel, "in", message.guild, "on", \
                   datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ",")
             print(sent_message)
-            sent_message = '```'+sent_message+'```' if sent_message
+            sent_message = '```'+sent_message+'```' if sent_message else sent_message
             await Messageable.send(channel, f'{message.author} deleted a message in #{message.channel} in {message.guild}:\n{sent_message}')
             # If message contains a picture, save it and send it
             if message.attachments:
