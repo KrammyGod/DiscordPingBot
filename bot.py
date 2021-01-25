@@ -6,10 +6,8 @@ import discord
 import random
 import asyncio
 from datetime import datetime
-from PIL import Image
 import sys
 import traceback
-import requests
 
 # Global variables and setting up bot.
 PREFIX = ["!!", "<@498219323337474049> ", "<@!498219323337474049> "]
