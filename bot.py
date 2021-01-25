@@ -19,8 +19,8 @@ intents.members = True
 userID = "0"
 member_check = 1
 client = commands.Bot(command_prefix=PREFIX, intents=intents)
-command_list = ["help", "baiter", "emoji", "daily", "roll", "prefix", 
-                "say", "bait", "cheese", "purge", "mute", "quit", "emojiid"]
+command_list = ["help", "emoji", "daily", "roll", "prefix", 
+                "say", "purge", "mute", "quit", "emojiid"]
 userIDs = ['omitted']
 
 #Function that returns id with given name
