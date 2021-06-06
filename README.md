@@ -7,7 +7,7 @@ Any issues please post in Issues, thx.
 
 Current functions:
 ### Emoji
-Use any emoji the bot can see, just by typing the name of the emoji. Eg. `!!emoji smirk`. Note that this is not very helpful, but it is the backbone of automating emoji names in `say` command. `!!emojiid` is for development purposes, you can use it to make the bot use a specific emoji.
+Use any emoji the bot can see, just by typing the name of the emoji. Eg. `!!emoji smirk`. Note that this is not very helpful, but it is the backbone of automating emoji names in [`say`](doc:Say) command. `!!emojiid` is for development purposes, you can use it to make the bot use a specific emoji.
 
 ### Daily
 Has not been limited to be used once per day, but update will come soon:tm:. Will automatically ping a random user (not bot) in the server and remind them to revive a dead chat.
