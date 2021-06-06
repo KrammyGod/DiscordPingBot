@@ -371,7 +371,7 @@ def is_user(message):
     return message.author == member_check
 
 
-# Purge command. channel.send isn't working rn for some reason.
+# Purge command.
 @client.command(description="Clears a specified number of messages (default is 100)",
                 brief="Clears Messages. Default is 100 (Admin Only)")
 async def purge(ctx, amount=100, user=None):
