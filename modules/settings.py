@@ -12,6 +12,7 @@ class _Config:
     INTENTS = discord.Intents(messages=True, guilds=True)
     INTENTS.members = True
     INTENTS.reactions = True
-    ADMINS = []
+    ADMINS = os.environ['OS_ADMIN']
+    INVITE_URL = os.environ['OS_INVITE']
 
 CONFIG = _Config()
