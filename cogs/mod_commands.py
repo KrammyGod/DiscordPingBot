@@ -2,15 +2,6 @@ import discord
 import random
 from discord.ext import commands
 from modules.converters import *
-from modules.settings import CONFIG
-
-# Function to check if the user is bot owner
-def check_owner(ctx):
-    '''
-    This function checks if the user has the id of the bot owner.
-    '''
-    return ctx.author.id == CONFIG.ADMINS
-
 
 class ModCommands(commands.Cog, name='Mod Commands'):
     '''
@@ -82,7 +73,7 @@ class ModCommands(commands.Cog, name='Mod Commands'):
 
     # Random Ping
     @commands.command(brief='Random ping to revive ded chat. (Owner only)')
-    @commands.check(commands.is_owner())
+    @commands.is_owner()
     async def revive(self, ctx):
         '''
         Pings a random member in the guild, can only be used by specific users.
@@ -109,7 +100,7 @@ class ModCommands(commands.Cog, name='Mod Commands'):
 
     # Making bot say message.
     @commands.command(brief='Make the bot say anything. (Owner only)')
-    @commands.check(check_owner)
+    @commands.is_owner()
     async def say(self, ctx, *args):
         '''
         Says a line for you. First argument determines the channel to send to.
