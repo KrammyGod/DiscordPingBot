@@ -14,6 +14,6 @@ class _Config:
     INTENTS.reactions = True
     ADMINS = int(os.environ['OS_ADMIN'])
     INVITE_URL = os.environ['OS_INVITE']
-    LOGS_CHANNEL = os.environ['OS_LOGS']
+    LOGS_CHANNEL = int(os.environ['OS_LOGS'])
 
 CONFIG = _Config()
