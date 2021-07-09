@@ -3,6 +3,9 @@ Custom Pinging Bot made for Discord
 
 ## Setup
 The setup is very simple, but it can be customized which is for advanced users only. The basic setup is to set the correct environment variables as shown below:
+
+First grab the files by forking/cloning, or downloading the zip. Then, navigate to the directly in your command line, and install requirements by running `python -m pip install -r requirements.txt`. If python is undefined, you must add python to PATH (plenty of resources online). Then we need to setup the environment variables.
+
 On windows: Go to search -> type `environment` and click "Edit the system environment variables". In the pop-up, click "Environment Variables...". 
 In user variables, create new environment variables according to this list:
 
