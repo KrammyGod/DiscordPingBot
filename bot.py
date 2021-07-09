@@ -4,8 +4,7 @@ import discord
 import asyncio
 import sys
 import traceback
-from discord.ext import commands, tasks
-from datetime import datetime, timezone
+from discord.ext import commands
 
 ################ CUSTOM PACKAGES #################
 from modules.converters import *
@@ -18,10 +17,9 @@ from cogs.misc_commands import MiscCommands
 ############# END CUSTOM PACKAGES #################
 
 # Global variables and setting up bot.
-COOKIE_ORDER = CONFIG.COOKIE_ORDER
 HELP = CustomHelp()
 LOGS_CHANNEL = CONFIG.LOGS_CHANNEL
-bot = commands.Bot(command_prefix=CONFIG.PREFIX, intents=CONFIG.INTENTS, activity=CONFIG.ACTIVITY, help_command=HELP, owner_ids=set(CONFIG.ADMINS))
+bot = commands.Bot(command_prefix=CONFIG.PREFIX, intents=CONFIG.INTENTS, help_command=HELP, owner_ids=set(CONFIG.ADMINS))
 
 # Add command cogs
 modCog = ModCommands(bot)
