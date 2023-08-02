@@ -1,3 +1,5 @@
+# This repository will soon be archived. A link to a public repo will be provided for the updated bot written in JS/TS.
+
 # DiscordPingBot
 Custom Pinging Bot made for Discord
 
