@@ -1,4 +1,5 @@
-# This repository will soon be archived. A link to a public repo will be provided for the updated bot written in JS/TS.
+# This repository has been archived.
+See [here](https://github.com/KrammyGod/pingbot) for upgraded verison of this repository.
 
 # DiscordPingBot
 Custom Pinging Bot made for Discord
